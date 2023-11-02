@@ -61,8 +61,96 @@ standards for telecomm and information technology ex : cyber security , machine 
 - basesrtation : gNode B / Ng-eNB ( LTE+NG )
 - UPF (User Plane Function) : {mobility anchor , policy enforcement . lawful interception} , provides interface to intent to make sure the devices does not exceed the amount of data that the user have in their subsciption
 - SMF (session management function) : before the device tasmits the data the network needs to establish a new session , give the device an IP address and release the sesssion when device has finished its activity . AMF forwardsall session related messages to SMF
-- AMF (Access and Mobility Management Function) :  {monility management , registration} , responsible for supporting the device to move between different rasio cells , also responsible for establishing signaling encrypted connection to the device so the device can register itself and can get authenticated and ready to acess the internet
+- AMF (Access and Mobility Management Function) :  {monility management , registration} , responsible for supporting the device to move between different radio cells , also responsible for establishing signaling encrypted connection to the device so the device can register itself and can get authenticated and ready to acess the internet
 - AUSF (Authentication Server Function) : {security} supports AMF with authentication related function during different procedures
-- UDM (Unified Data Management) : user subscriber is stored in user data repository (UDR) , UDM is the frontend for the user subscription data , the AMF dosnt contain user sub data , UMF supports AMF for registration of devices
+- UDM (Unified Data Management) : user subscription data is stored in user data repository (UDR) , UDM is the frontend for the user subscription data , the AMF dosnt contain user sub data , UMF supports AMF for registration of devices
 - PCF (policy control function) : {session mgmt policies  , non-session policies , charging devices depending on usage of device
--  
+  
+## 5G deployment options 
+
+![Screenshot from 2023-11-02 21-37-55](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/d1e42d27-e05a-4a92-ac73-e90248156f78)
+
+- EPC = evolved packet core (4G)
+
+![Screenshot from 2023-11-02 21-38-58](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/6e324445-3b0a-4176-9044-9add401c121d)
+
+![Screenshot from 2023-11-02 21-39-50](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/2a255d41-27b3-4b3e-b03d-23ebd7745bd0)
+
+- option 3 : core network sends data to 4G base staion and it splits data streams , part of which is sent to UE and other half sent to gnode b which is then sent to UE  ; eNode B can send smaller data rate rest can be forwarded to gNodeB and gNodeB can transmit with higher data rates
+- option 3a : data directly sent from core network to gNodeB ; disadvantage :- data cannot be sent over both gNOdeB and eNodeB for ex :- for eMBB the data rates needs to be higher so they can be sent directly from core network to gNodeB and then to UE , on the other hand if there is a need for voice over LTE that can be sent to eNodeB then to the network  no need for gNodeB as voice over LTE needs low data rates
+- option 3x : combination of 3 and 3a
+
+ ![Screenshot from 2023-11-02 21-51-42](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/18882cf3-3b37-49b1-8fef-bd3b09a3cd55)
+
+![Screenshot from 2023-11-02 21-52-10](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/099f1451-7226-4067-aa0a-cb4fa6337966)
+
+![Screenshot from 2023-11-02 21-52-30](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/d9cab915-5ed3-4061-a0ea-574b79197077)
+
+![Screenshot from 2023-11-02 21-53-23](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/e1fa5d10-fa23-4d3c-a22a-fd43ce7acf5c)
+
+![Screenshot from 2023-11-02 21-53-51](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/54e5af91-b60b-48b6-978d-e6fc8de0d12b)
+
+## RAN PROTOCOL STACK
+
+![Screenshot from 2023-11-02 22-35-57](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/52265c6d-869e-4c08-aa13-611e34ee49a0)
+
+- user plane protocol stack : supports carrying user data between different application in the ue and in the network
+- control plane protocol stack : can be seen as carrying the control info between the UE and the gNodeB or the core network
+
+### user plane protocol stack : 
+![Screenshot from 2023-11-02 22-38-28](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/7eccdd3a-ba0c-4bc9-9b3b-af1411a11d32)
+
+- PHY : efficient wireless communication , bits and bytes transmitted in wireless channels
+- MAC : retransmission (looking for errors) , multiplexing.demultiplexing ,  scheduling
+- RLC : robust error detection scheme ARQ , packets broken down into smaller packets called segmentation , puts them back together in reassembling side
+- PDCP : ip header compression ; ciphering and integrity protection of info so no one can eaves drop ; duplicate removal
+- SDAP : Mapping the QoS bearer into the right radio bearer according to the QoS requirements
+
+![Screenshot from 2023-11-02 22-46-38](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/14c0077d-d151-4308-9762-dcb658f0adfc)
+
+![Screenshot from 2023-11-02 22-47-20](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/d28794c9-f552-4558-9229-6f597e8bc176)
+
+![Screenshot from 2023-11-02 22-47-43](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/7032593c-ca57-454c-b7bd-77874cb89f87)
+
+- NAS (NON-ACCESS STRATUM) : (core network <==> UE) authentication , security ,idle mode procedure
+- RRC (RADIO RESOURCE CONTROL) : (RRC gNodeB <==> RRC UE) responsible for RAN related control plane procedures like broadcasting systum info which helps the device learn the essential parameters of the cell , responsible for setting up radio bearers , 
+
+
+## SERVICE DATA ADAPTATION PROTOCOL (SDAP) 
+
+![Screenshot from 2023-11-02 23-40-40](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/b8b8738b-992d-4e26-bb16-3a12dbb2ff81)
+
+- QoS : ability to provide different priority to different application , users or data flows or to guarantee a certain level of performace
+- Qos flows : QFI : packets are classified and marked using an ID called QOS identifier or QFI ; using these packets with certain QFI can recieve cooresponding treatment used to differentiate package from different kinds of services  
+
+![Screenshot from 2023-11-02 23-45-10](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/6a0b9b96-9b17-4d88-8129-0c8887cfe7d9)
+
+![Screenshot from 2023-11-02 23-45-27](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/1f69ecc5-0fab-40c7-83ec-5ed5de110841)
+
+- guarenteed bitrate (GBR) QoS flow : voice comm requires GBR so voice doesnt get disrupted
+- non guarenteed bitrate (NON-GBR) : used for busty traffic for ex browsing the net or downloading a file
+- delay critical : mission critical application ex self driving cars robots etc
+
+![Screenshot from 2023-11-02 23-48-39](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/a221bf60-8807-4ea2-8353-58bb025e6cf0)
+
+![Screenshot from 2023-11-02 23-49-11](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/c81a0ecc-1fec-4a18-9f41-ad144751562e)
+
+![Screenshot from 2023-11-02 23-50-26](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/34828365-3076-4106-bf92-54aa15e0d9dd)
+
+![Screenshot from 2023-11-02 23-50-48](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/c1d8cc3f-237f-4639-99c4-d5f8983f7ebf)
+
+- reflecive mapping : when device uses same QoS flow and radio bearer in uplink as in downlink
+- explicit mapping : when device configured to use a specific QoS flow and bearer through RRC signals then it is called explicit mapping
+
+![Screenshot from 2023-11-02 23-53-20](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/1554b80a-e6f1-48fc-b540-7f8b9b59dfaa)
+
+
+
+
+
+
+
+
+
+
+
