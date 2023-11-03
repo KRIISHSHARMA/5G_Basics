@@ -300,16 +300,32 @@ UCI : provides the scheduler with informatipn about the situation at the device
 
 ![Screenshot from 2023-11-03 22-26-43](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/f72aa52b-148d-4350-b282-2fad33853c25)
 
+## PHYSICAL LAYER STRUCTURE 
 
+![Screenshot from 2023-11-03 23-00-57](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/86cec1ad-564a-494b-87e9-cd96d9a60e3a)
 
+![Screenshot from 2023-11-03 23-01-33](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/47941cdb-6a9c-4fa2-a77d-518ffe443245)
 
+- cyclic prefix : idea of a signal with the repetition of the end of the signal ; helps prevent inter symbol interface
 
+![Screenshot from 2023-11-03 23-03-19](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/e16df5a7-94bb-4482-b283-218afe8ff90e)
 
+![Screenshot from 2023-11-03 23-03-46](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/0c699971-e942-4fd4-9c04-b53ee1d007a4)
 
+![Screenshot from 2023-11-03 23-04-02](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/eba2d288-6266-462c-8169-71cf7c9fc5cd)
 
+![Screenshot from 2023-11-03 23-04-27](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/f46b8f38-cd64-4c33-aca0-90bffb0512b8)
 
+![Screenshot from 2023-11-03 23-04-53](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/7657acd0-087d-478c-87bd-db1b76ac3996)
 
+- 1 sub carrier for a duration of 1 ofdm symbol is called resource element
+- 12 sub carriers  = 1 resource block 
 
+![Screenshot from 2023-11-03 23-06-24](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/5bbb24b3-241a-406d-b9ff-4b9ddb8dc28d)
+
+- mini slots are shorter ver of slots
+- std slot has 14 symbols ; mini slot has 2,4or 7 symbols
+- can begin in any symbol boundary instead of slot boundary
 
 
 
