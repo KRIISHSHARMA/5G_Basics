@@ -327,6 +327,26 @@ UCI : provides the scheduler with informatipn about the situation at the device
 - std slot has 14 symbols ; mini slot has 2,4or 7 symbols
 - can begin in any symbol boundary instead of slot boundary
 
+## NAS AND RRC 
+
+![Screenshot from 2023-11-03 23-24-24](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/80d0e2f0-c501-4bdf-8136-793979caf576)
+
+
+![Screenshot from 2023-11-03 23-25-00](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/11899733-396d-4130-b75f-be5217566635)
+
+![Screenshot from 2023-11-03 23-25-29](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/e7fbc81d-7d80-4409-93bd-53bef9993c0b)
+
+![Screenshot from 2023-11-03 23-25-57](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/bf3d9671-1b48-4fcd-bbbb-0aa733f49b50)
+
+
+
+
+
+
+
+
+
+
 
 
 
