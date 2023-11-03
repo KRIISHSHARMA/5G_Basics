@@ -269,6 +269,46 @@ standards for telecomm and information technology ex : cyber security , machine 
 
 ![Screenshot from 2023-11-03 21-35-49](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/33cfe027-144f-4a86-b941-02b5bd14bda7)
 
+## PHYSICAL LAYER
+
+![Screenshot from 2023-11-03 22-19-21](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/203b4db2-71b2-4358-bb20-e16906322fef)
+
+-DCI (downlink control information) : provides device with neccessary information for proper decoding and reception of downlink data 
+UCI : provides the scheduler with informatipn about the situation at the device
+![Screenshot from 2023-11-03 22-19-38](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/4c6adf58-cb20-49a7-b16d-95b55f51a586)
+
+- requests retransmission if transport block is fully corrupted
+- crc length : 24 bits when payload > 3824 bit and 16 bits when < 3824 bits
+
+![Screenshot from 2023-11-03 22-24-17](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/991ddf31-e32f-470f-a1e5-f0ce17a31dfe)
+
+![Screenshot from 2023-11-03 22-24-34](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/00852ff5-9ef3-4e78-9559-3493ae6862b0)
+
+![Screenshot from 2023-11-03 22-24-50](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/218ce38d-3830-4fb9-95cd-ca7fc3879938)
+
+![Screenshot from 2023-11-03 22-25-14](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/b68e9a08-6c73-4381-aecb-5838a1860316)
+
+![Screenshot from 2023-11-03 22-25-27](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/8c489bcc-0ecc-4a61-b5af-60497d99e4ee)
+
+![Screenshot from 2023-11-03 22-25-42](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/2bbfc60b-dd79-461e-a896-039c1a5cd4db)
+
+![Screenshot from 2023-11-03 22-25-55](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/ad3d7b93-e805-4f4e-a127-7989fe636496)
+
+![Screenshot from 2023-11-03 22-26-12](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/b623cc46-0a0e-4558-8b4f-d049188292e5)
+
+![Screenshot from 2023-11-03 22-26-27](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/0e08ab45-1d07-4f97-aa6e-92630816fd80)
+
+![Screenshot from 2023-11-03 22-26-43](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/f72aa52b-148d-4350-b282-2fad33853c25)
+
+
+
+
+
+
+
+
+
+
 
 
 
