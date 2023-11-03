@@ -170,6 +170,52 @@ standards for telecomm and information technology ex : cyber security , machine 
 
 - PDCP acts as sequence number to ensure in-sequence delivery
 
+## RLC 
+
+![Screenshot from 2023-11-03 19-15-22](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/2cab9ff5-9299-4b80-a0f6-281dc4871089)
+
+### RLC MODES
+
+![Screenshot from 2023-11-03 19-16-07](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/48bb18c8-e997-4937-9d1d-1cb2c37f5194)
+
+- transport mode : in these cases the channels are already designed in such a way that there is no need for segmentation
+- acknowlaged mode : essential for web browsing , file transfer etc.
+
+### segmentation
+
+![Screenshot from 2023-11-03 19-19-05](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/6ec9a131-c28b-47cd-9757-a483c50e6cba)
+
+- RLU PDU's are assembled as soon as possible without waiting and the MAC layer performers the concatination depending on the trasfered larger size { benefits in low latency applications }
+
+
+### retransmissions 
+
+![Screenshot from 2023-11-03 19-22-09](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/71e1171d-155f-4329-907c-d875303a1023)
+
+- IN-SEQUENCE delivery not handled in RLC { done by PDCP , also optional }
+  - reduce the overall latency of later packets , do not have to wait for retransmission of an earlier missing packet and it an be delivered directly to higher layers  
+
+![Screenshot from 2023-11-03 19-25-30](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/0e040a5a-963e-4747-a694-7272b02d8c06)
+
+![Screenshot from 2023-11-03 19-25-51](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/d82562ce-d049-482d-9176-9594bb78c699)
+
+![Screenshot from 2023-11-03 19-26-18](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/c9e67f9c-603d-4810-b374-cc52b994249b)
+
+![Screenshot from 2023-11-03 19-26-36](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/242d8145-387a-42ae-9651-1ad073efa149)
+
+![Screenshot from 2023-11-03 19-26-50](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/3f39ff5b-08c6-425b-bc44-889401eede10)
+
+![Screenshot from 2023-11-03 19-27-17](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/aa91657b-88e5-41de-a291-b63540b72315)
+
+![Screenshot from 2023-11-03 19-27-45](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/cc0bb6a5-b09f-4b68-b494-ad5048651f2f)
+
+
+
+
+
+
+
+
 
 
 
