@@ -235,14 +235,39 @@ standards for telecomm and information technology ex : cyber security , machine 
 
 - only the code block group that is affected by the error is transmitted
 
+## scheduler 
+![Screenshot from 2023-11-03 21-20-06](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/dc7f46e6-db11-4ade-91d4-76b7b5c646dd)
 
+- job of scheduler is to determine whih devices shoulduse which time frequency and antenna resources
+- schedular interacts with different layers for ex its constructed as a part of MAC layer but has to interact with the RLC layer in order to understand what is the status and physical layer to interact with the modulation
 
+![Screenshot from 2023-11-03 21-23-03](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/12647004-de7d-4653-be38-30f9e672d795)
 
+- INPUTS
+  - channel conditions : depending on what is the channel condition of different users scheduling conditions are made to optimize
+  - buffer status : indicates how much data is left to be sent
+  - data flows priority etc. : small data + high priority etc.
 
+- SCHEDULING
+  - devices : what other devices that are going to be transmitted or recieved from for a given time slot
+  - resource blocks : RB that those devices can use and how much of these RB can be assigned to differnet devices
 
+ ![Screenshot from 2023-11-03 21-29-33](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/b1f8f9ef-18f1-44db-95c5-c72cdca02754)
 
+![Screenshot from 2023-11-03 21-29-51](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/ea2bd619-4fcd-424b-aade-fa0f3191b7e7)
 
+![Screenshot from 2023-11-03 21-30-07](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/32b050a0-bf76-40b7-9a9a-5e1e13140038)
 
+- only when there is a lot of data to be sent the device can be scheduled to use the entire bandwidth . Otherwise only a part of the bandwidth call bandwidth part is used for monitoring data channel because bandwidth are very large therefore difficult for the device to monitor for control information because if it monitors over the entire 100MHz it will lead to fast battery draining
+- adaptation is also controlled by sceduler and then the scheduler can inform the device when is the best time to use or narrowbandwidth or widebandwidth
+
+![Screenshot from 2023-11-03 21-34-56](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/18422659-39cc-4d8a-98bb-a8ad178789ed)
+
+![Screenshot from 2023-11-03 21-35-17](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/8323dad6-4c4b-4d2a-b148-5e9eeb26a2bd)
+
+![Screenshot from 2023-11-03 21-35-34](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/5341d603-8fa4-487c-854b-d2c8c4dba506)
+
+![Screenshot from 2023-11-03 21-35-49](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/33cfe027-144f-4a86-b941-02b5bd14bda7)
 
 
 
