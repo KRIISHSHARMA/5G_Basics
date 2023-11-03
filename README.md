@@ -170,7 +170,7 @@ standards for telecomm and information technology ex : cyber security , machine 
 
 - PDCP acts as sequence number to ensure in-sequence delivery
 
-## RLC 
+## RLC { RADIO LINK CONTROL } 
 
 ![Screenshot from 2023-11-03 19-15-22](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/2cab9ff5-9299-4b80-a0f6-281dc4871089)
 
@@ -208,6 +208,42 @@ standards for telecomm and information technology ex : cyber security , machine 
 ![Screenshot from 2023-11-03 19-27-17](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/aa91657b-88e5-41de-a291-b63540b72315)
 
 ![Screenshot from 2023-11-03 19-27-45](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/cc0bb6a5-b09f-4b68-b494-ad5048651f2f)
+
+## MAC (MEDIUM ACCESS CONTROL) 
+
+![Screenshot from 2023-11-03 19-58-37](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/6f646a9e-1de2-4298-92d1-e642b66117cc)
+
+![Screenshot from 2023-11-03 19-59-33](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/bdfd5049-ae86-45d6-ac93-5286df735874)
+
+- MAC provides services to RLC trough logical channels
+- MAC layer uses services from physical layer in the form of transport layer
+
+![Screenshot from 2023-11-03 19-59-50](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/ca86c645-31ef-4f90-b8e7-487a6c283d07)
+
+- logical channel : is defined by the type of information it carries and generally classified as a control channel used for transmission of control and config information necessary for operating an NR system or as a traffic channel used for the user data .
+- transfer channel : defined by how and what characteristics the information is transmitted over the radio interface
+
+![Screenshot from 2023-11-03 20-06-41](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/b1decf73-ed14-490d-a68c-161b30c44412)
+
+![Screenshot from 2023-11-03 20-06-56](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/1078872a-8de4-4fd8-9e08-7eb8d8ff4d5b)
+
+![Screenshot from 2023-11-03 20-07-19](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/292a9c68-a437-4713-a292-b8152ae161fa)
+
+![Screenshot from 2023-11-03 20-07-36](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/40502c9a-c987-47a1-973a-700d50d55035)
+
+![Screenshot from 2023-11-03 20-07-53](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/1863b917-280a-40cd-a5b9-d713e408d62b)
+
+- only the code block group that is affected by the error is transmitted
+
+
+
+
+
+
+
+
+
+
 
 
 
