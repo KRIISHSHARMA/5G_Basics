@@ -90,6 +90,8 @@ standards for telecomm and information technology ex : cyber security , machine 
 
 ![Screenshot from 2023-11-02 21-53-51](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/54e5af91-b60b-48b6-978d-e6fc8de0d12b)
 
+# 5G NEW RADIO (NR) RADIO AREA NETWORKA
+
 ## RAN PROTOCOL STACK
 
 ![Screenshot from 2023-11-02 22-35-57](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/52265c6d-869e-4c08-aa13-611e34ee49a0)
@@ -111,7 +113,7 @@ standards for telecomm and information technology ex : cyber security , machine 
 ![Screenshot from 2023-11-02 22-47-20](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/d28794c9-f552-4558-9229-6f597e8bc176)
 
 ![Screenshot from 2023-11-02 22-47-43](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/7032593c-ca57-454c-b7bd-77874cb89f87)
-
+### control plane protocol stack
 - NAS (NON-ACCESS STRATUM) : (core network <==> UE) authentication , security ,idle mode procedure
 - RRC (RADIO RESOURCE CONTROL) : (RRC gNodeB <==> RRC UE) responsible for RAN related control plane procedures like broadcasting systum info which helps the device learn the essential parameters of the cell , responsible for setting up radio bearers , 
 
@@ -144,12 +146,29 @@ standards for telecomm and information technology ex : cyber security , machine 
 
 ![Screenshot from 2023-11-02 23-53-20](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/1554b80a-e6f1-48fc-b540-7f8b9b59dfaa)
 
+## PACKET DATA CONVERGENCE PROTOCOL (PDCP)
+![Screenshot from 2023-11-03 09-55-26](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/e2bee4fb-001a-4cdc-9a63-4b1c1b751be6)
 
+![Screenshot from 2023-11-03 09-56-04](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/b7dcf8fb-2c84-48e2-be30-faf71557d4d9)
 
+- For small data packets (voice packets) the header itself would be as long as the data packet .
+- PDCP performs header compression to reduce header length to a couple of bytes for wireless trasmission
+- Decompression of header size before it is transmitted over IP protocols in the wired network is also done by PDCP
+- The header compression scheme is based on robust header compression (ROHC) protocol
 
+![Screenshot from 2023-11-03 10-00-24-1](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/26a5f704-87c2-4bda-a9cb-d6d432770d4f)
 
+- taking unencrypted data and encrypting it into cypher text using an encryption key
 
+![Screenshot from 2023-11-03 10-01-47](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/aab29105-151c-4afb-a7fb-14d46cee6bda)
 
+- To achieve more data rate , duplication can be used to send the exact same data through two different radio bearers to improve reliability.
+- This way even if one fails , UE can recieve data from the other bearer
+- In recieving side PDCP is responsible for discarding the duplicates and picking the anaronious packet { called selection diversity } if there is an error in one of the radio bearers
+
+![Screenshot from 2023-11-03 10-06-38](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/69fc447d-2b02-4ce8-b093-4c899e1129ec)
+
+- PDCP acts as sequence number to ensure in-sequence delivery
 
 
 
