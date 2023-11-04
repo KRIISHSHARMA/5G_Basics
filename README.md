@@ -338,21 +338,54 @@ UCI : provides the scheduler with informatipn about the situation at the device
 
 ![Screenshot from 2023-11-03 23-25-57](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/bf3d9671-1b48-4fcd-bbbb-0aa733f49b50)
 
+## INITIAL ACCESS 
 
+- cell search : procedure by which a UE acquires time and freq synchrinization with a cell and detects the cell ID of that cell
 
+![Screenshot from 2023-11-04 09-14-29](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/3ab172d8-01d0-422b-a5ec-401694419507)
 
+![Screenshot from 2023-11-04 09-15-17](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/bdcd10bc-036a-4886-a188-dbf77dabab62)
 
+![Screenshot from 2023-11-04 09-16-02](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/f0e48fc0-4b31-4b4c-ad5c-5058458c6c32)
 
+![Screenshot from 2023-11-04 09-16-23](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/fabdb8ba-d38d-4118-af5a-5a357eb141f5)
 
+- it carries the master info block it includes a limited no. of the most essential and most frequent transmited parameters that are necessary to auire other information from the cell .
+- This includes MIB and SIB 1 also called remaining MIB
 
+![Screenshot from 2023-11-04 09-18-57](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/d29f4148-9545-472e-ab7d-783a92ade63d)
 
+![Screenshot from 2023-11-04 09-19-16](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/6e38bcb0-602a-4fe2-9035-4f043f465001)
 
+![Screenshot from 2023-11-04 09-19-32](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/d25538c1-2cf4-4366-8fa5-8cf42512339f)
 
+ ## RANDOM ACCESS PROCEDURE 
+ 
+![Screenshot from 2023-11-04 10-16-37](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/55cfb988-248e-48d7-b580-d1d9e1a3c09f)
 
+![Screenshot from 2023-11-04 10-17-03](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/b6ac7359-8327-4ac6-b3ed-ec114d51d6a5)
 
+- CBRA = contention based random access
+  
+![Screenshot from 2023-11-04 10-17-24](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/8f88c2f5-a652-4c00-9c7a-0ee3c13a5bf1)
 
+![Screenshot from 2023-11-04 10-18-00](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/da0cbc01-45f5-4608-8e76-ca149c02dd46)
 
+- same preamble = same temp ID = collision
 
+![Screenshot from 2023-11-04 10-18-22](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/0e69255f-7c1c-4792-92e5-66373a225276)
 
+- makes sure a device doesnt incorrectly use another device identity
+- might have same temp id but will have diff uniques id's
+- RA failure due to different unique ID
 
+![Screenshot from 2023-11-04 10-21-30](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/078b654b-10cf-47c3-9f53-6dce907897e8)
+
+- CFRA = contention free random access
+
+![Screenshot from 2023-11-04 10-21-58](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/1a6b6182-443b-4307-af83-11982ddaf6c7)
+
+- no collision as gNB coordinates with the device to make sure there is no room for collision
+
+![Screenshot from 2023-11-04 10-25-00](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/3c3cd28b-06c2-4cbe-878f-e8f58655f782)
 
