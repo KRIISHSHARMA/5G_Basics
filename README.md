@@ -406,15 +406,30 @@ UCI : provides the scheduler with informatipn about the situation at the device
 
 ![Screenshot from 2023-11-04 11-09-36](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/77e967c0-add5-4b83-9bb1-2fa91b8022f3)
 
+## SERVICE BASED ARCH
 
+![Screenshot from 2023-11-04 13-13-12](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/771f9c72-3da6-44fd-817a-bc25c3db2da5)
 
+- Monolathic : software applications built in one bulky entity ; single stone as a solution
+- Microservices : application brocken down into different services , each service performes a very simple operation and different services can communicate with each other using communication simple interface
+  - flexible deployment
+  - new sevices can be added w//o hinderance
 
+![Screenshot from 2023-11-04 13-17-01](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/1fd523a5-f653-4d7b-8593-2e0e18ea80a2)
 
+![Screenshot from 2023-11-04 13-17-28](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/b468ab7b-34c2-4124-95b3-24f3fbb26257)
 
+- A network function can be considered as a self contained software module
 
+![Screenshot from 2023-11-04 13-18-13](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/9b0ed76c-04f2-426f-9edd-347561391d42)
 
+![Screenshot from 2023-11-04 13-18-28](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/b4bbe4a3-d9fe-4ba7-a017-4269f6bb1f5c)
 
+- http rest : it defines a set of rules for how to implement the communication between different software modules in a network arch 
 
+![Screenshot from 2023-11-04 13-20-04](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/09802413-646f-40fc-8d9d-84bb2a63ca13)
+
+![Screenshot from 2023-11-04 13-20-24](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/897bda64-214a-4a3c-8824-544ff67e5bc3)
 
 
 
