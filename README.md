@@ -476,10 +476,17 @@ UCI : provides the scheduler with informatipn about the situation at the device
 
 ![Screenshot from 2023-11-04 17-37-05](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/0d8ca1d5-7429-48ec-b265-0591112469e5)
 
+## UDR AND UDM 
 
+![Screenshot from 2023-11-04 18-37-33](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/a50df385-dff9-485c-989a-7303a1b44b7f)
 
+![Screenshot from 2023-11-04 18-37-50](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/27db5af0-1b4d-471f-ba48-0e0e84bb5182)
 
+## UPF 
 
+![Screenshot from 2023-11-04 19-22-38](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/cfcf6a7b-cd54-4439-a14e-29124a340f2a)
+
+![Screenshot from 2023-11-04 19-22-56](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/e13e7a15-1062-4844-b09a-78384e9572e7)
 
 
 
