@@ -431,13 +431,26 @@ UCI : provides the scheduler with informatipn about the situation at the device
 
 ![Screenshot from 2023-11-04 13-20-24](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/897bda64-214a-4a3c-8824-544ff67e5bc3)
 
+## MANAGEMENT
+![Screenshot from 2023-11-04 15-15-43](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/1f92041d-d4a9-4c85-9cdd-46e90a538726)
 
+- CM AND RM : AMF
+- SM : SMF
 
+![Screenshot from 2023-11-04 15-16-22](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/6b1c8459-f72f-4b89-be2a-395740db1d5c)
 
+![Screenshot from 2023-11-04 15-16-47](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/cbef1222-dc22-491d-bcf6-acfd5d5b9e49)
 
+- NAS : refers to the connectivity between device and the AMF
+- access statum : connectivity of wireless access which is connected between device and the gNB
 
+![Screenshot from 2023-11-04 15-24-47](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/12854546-8d30-46cd-98a4-503d704f3dae)
 
+![Screenshot from 2023-11-04 15-25-06](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/40ea96f4-6723-4845-a6d5-7e0ccfa903b6)
 
+![Screenshot from 2023-11-04 15-25-35](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/bc83fb84-ff2d-41db-b44c-d534c8b9f9fd)
+
+![Screenshot from 2023-11-04 15-26-28](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/c0aed667-65fd-4e00-a9a7-c53a09294203)
 
 
 
