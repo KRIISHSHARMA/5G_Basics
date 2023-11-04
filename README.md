@@ -452,12 +452,29 @@ UCI : provides the scheduler with informatipn about the situation at the device
 
 ![Screenshot from 2023-11-04 15-26-28](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/c0aed667-65fd-4e00-a9a7-c53a09294203)
 
+## SMF 
 
+![Screenshot from 2023-11-04 17-16-23](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/22353a0d-e585-497e-9268-b4a931df50fa)
 
+- PDU SESSION : logical connection between device and end of the user plane function towards a specific data network
 
+![Screenshot from 2023-11-04 17-18-15](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/ab79034a-7805-4521-a668-ff9c220fd34e)
 
+![Screenshot from 2023-11-04 17-18-38](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/f5f68907-6e3b-42bc-9ee4-ab427d6d8b70)
 
+![Screenshot from 2023-11-04 17-18-55](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/7c78e720-ee23-4283-9148-1252df268f38)
 
+![Screenshot from 2023-11-04 17-19-13](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/37916174-e4ca-48b6-a2a3-6aca9c0e3fe1)
+
+![Screenshot from 2023-11-04 17-19-35](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/eb378152-b4f8-453a-8434-2c6fd1095dfe)
+
+![Screenshot from 2023-11-04 17-20-07](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/c3b7af9e-ce8c-46f4-a2a6-a206d54a9d92)
+
+- SSC MODE 1 : same UDF is used as the PDU session anchor the benefit being device will retain the IP address . suited for application whenIP address must remain the same . disadvantage  = not the best performance even in new location
+- SSC MODE 2  (BREAK BEFORE MAKE) : if device moves , a new PDU session created with a new UPF anchor , so the device gets a new IP address because it has a new PDU session . IP1 released before a new PDU session created with IP2 . Small interruption in connectivity qw IP1 is released before IP2 is created . POSITIVE : device always has the best UPF session anchor
+- SSC MODE 3 (MAKE BEFORE BREAK) : here when the device moves , before the PDU session is released a new PDU session is created . Either PDU session can be created using the same UPF as the session anchor or a new anchor can be requested having a new PDU session , for a brief amount of time device will have 2 IP's as new one is created before previous one is turned down
+
+![Screenshot from 2023-11-04 17-37-05](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/0d8ca1d5-7429-48ec-b265-0591112469e5)
 
 
 
