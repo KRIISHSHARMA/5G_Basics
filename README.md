@@ -488,8 +488,12 @@ UCI : provides the scheduler with informatipn about the situation at the device
 
 ![Screenshot from 2023-11-04 19-22-56](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/e13e7a15-1062-4844-b09a-78384e9572e7)
 
+## PCF 
+![Screenshot from 2023-11-04 21-29-37](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/9dc716e0-89fd-46e7-9dbc-5a4f62de9414)
 
+![Screenshot from 2023-11-04 21-30-09](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/09718449-9538-45d8-a7ad-e6cb2caa067a)
 
+![Screenshot from 2023-11-04 21-30-25](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/a780c244-9745-4e9e-bcf8-95dc0171a245)
 
 
 
