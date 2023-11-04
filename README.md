@@ -389,3 +389,79 @@ UCI : provides the scheduler with informatipn about the situation at the device
 
 ![Screenshot from 2023-11-04 10-25-00](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/3c3cd28b-06c2-4cbe-878f-e8f58655f782)
 
+# 5G CORE NETWORK 
+### IDENTIFIERS 
+
+![Screenshot from 2023-11-04 11-03-39](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/c76594db-e194-4a07-bfb9-ef5185659756)
+
+![Screenshot from 2023-11-04 11-04-07](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/e8107d00-b665-4815-9182-1f5f2b288134)
+
+![Screenshot from 2023-11-04 11-04-28](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/a5e7459f-b7d4-4524-9a4b-bbe338873626)
+
+- MCC : which country subsciber belongs to
+- MNC : defines exact operator in the country
+- MSIN : defines the actual subsciber within operator within the country
+
+![Screenshot from 2023-11-04 11-09-21](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/131237e6-a9fa-47c4-8bed-db23776806b3)
+
+![Screenshot from 2023-11-04 11-09-36](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/77e967c0-add5-4b83-9bb1-2fa91b8022f3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
