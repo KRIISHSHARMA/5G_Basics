@@ -495,7 +495,8 @@ UCI : provides the scheduler with informatipn about the situation at the device
 
 ![Screenshot from 2023-11-04 21-30-25](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/a780c244-9745-4e9e-bcf8-95dc0171a245)
 
-# 
+# 5G CALL FLOWS
+
 ## REGISTRATION PROCEDURE 
 
 ![Screenshot from 2023-11-05 09-53-31](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/371e134e-832b-4966-abd9-b37309ea10ca)
