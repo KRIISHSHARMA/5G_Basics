@@ -495,10 +495,27 @@ UCI : provides the scheduler with informatipn about the situation at the device
 
 ![Screenshot from 2023-11-04 21-30-25](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/a780c244-9745-4e9e-bcf8-95dc0171a245)
 
+# 
+## REGISTRATION PROCEDURE 
 
+![Screenshot from 2023-11-05 09-53-31](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/371e134e-832b-4966-abd9-b37309ea10ca)
 
+- INITIAL REGISTRATION  : power on initiation
+- PERIODIC REGISTRATION : to make sure device has not ran out of battery / broken
+- MOBILITY REGISTRATION : if device moving to new location
+- EMERGENCY REGISTRATION : where the device likes to access emergency calls
 
+![Screenshot from 2023-11-05 10-00-50](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/93a1aada-ff40-4d1b-96b2-a36fc1c105ca)
 
+## DEREGISTRATION PROCEDURE 
+
+![Screenshot from 2023-11-05 10-10-37](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/65d6c0dd-f0c3-4a60-9d1b-5cffbb5f92f8)
+
+## PDU SESSION ESTABLISHMENT
+
+![Screenshot from 2023-11-05 12-57-14](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/0e7d6f6f-c8e7-4c6e-a36f-f0a2bd7ee377)
+
+![Screenshot from 2023-11-05 12-57-52](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/fb8a6462-56d7-4daa-b156-2893c83c25b6)
 
 
 
