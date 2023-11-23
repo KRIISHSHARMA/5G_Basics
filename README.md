@@ -550,9 +550,31 @@ UCI : provides the scheduler with informatipn about the situation at the device
 
 ![Screenshot from 2023-11-05 12-57-52](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/fb8a6462-56d7-4daa-b156-2893c83c25b6)
 
+- (1st step) device sends the session establishing request to RAN which is forwarded to the AMF
+- this request contains information like which data network this device is requesting a PDU session and what type of session type is it looking for (IP based or ethernet or unstrucured) based on info like this there is one more necessary information , is this a new PDU session or a handover
+  - in case of new PDU session the AMF will see what is the type of session that the device has requested , what data network is it trying to connect to , for eg if trying to connect to IMS(IP multimedia subsystem(call)) than the AMF will select an apropriate SMF to do the session handling on the other hand if it is connectivity towards internet then the AMF will select a corresponding SMF for doing the session managemnt
+  - in case of session handover its not a new session so AMF can look into the device context and the context will already be associated with particular SMF so it can contact the corresponding SMF in that case
 
+- (2nd step) the AMF contacts the SMF for creating the session manangment context and in addition contact the UDM to get the necessary subscription data and subscribes to further  updates of the subscription data
+- when the SMF agrees to the session managment context creation it provides the corresponding positive acknowledment as the response
 
+- (3rd step) if authentication necessary that is taken care in this step
 
+- (4th step) now SMF selects an apropriate PCF and creates a policy session so it can get the necessary PCC(The Policy and charging control rule (PCC rule) comprises the information that is required to enable the user plane detection of, the policy control and proper charging for a service data flow) rules from the PCF
+- and also it selects an apropriate UPF to connect to the correct data network and creates a connectivity with the corresponding UPF
+- **At this point SMF selects an IP address for the device**
+
+- (5th step) at this point SMF sends an accept message towards the device together with info relateded to QoS and also the tunnel between the gNB and the UPF
+- this message is sent via AMF which then forwards to RAN
+
+- (6th step) at this point the QoS and tunnel info has reached the RAN which then creates connectivity towards the device and replies back to the AMF using the tunneling information at the end point of the RAN this means the setup is now complete for sending UL data from the device towards 5G network
+- first UL data can now be sent
+
+- (7th step) in this stage the AMF has previously received the RAN end of tunnel information from the RAN so it forwards this to SMF and SMF forwards to UPF
+- so that the UPF know what is tunnel end point in the RAN end so it establishes connectivity from UPF to RAN
+- so the UPF can forward the first DL data from data network towards device
+
+- (8th step) now that UL and DL data in successful the AMF can go register itself to the UDM that this is the corresponding to the PDU session that was currently created 
 
 
 
