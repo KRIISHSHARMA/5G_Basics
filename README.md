@@ -508,6 +508,13 @@ UCI : provides the scheduler with informatipn about the situation at the device
 
 ![Screenshot from 2023-11-05 10-00-50](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/93a1aada-ff40-4d1b-96b2-a36fc1c105ca)
 
+1. first step is registration request for eg(when device is turned on, mobile sends registration request to RAN)
+2. RAN has to forward it to appropraite AMF but how will RAN know what is appropriate AMF
+3. here there are 2 possilities
+   1. first if the device has already been communicating to the 5G network then it will have a temp ID assigned (`5G-GUTI(5G global unique temporary identifier)assigned by AMF which is comprised of the GUAMI (Globally Unique AMF ID) and the 5G-TMSI (5G Temporary Mobile Subscriber Identity)., used when AMF region of UE is not known`) so it can use this to see which AMF the device was previously been in communication with and RAN can forward request to corresponding AMF
+   2. if no previous identity available it means its the first power on procedure so RAN looks at the registration request and the registration request will have a slice identifier **NSSAI** , and then based on the slice identifier for this particular network slice the RAN sees which AMF supports that network slice and forwards the request to it 
+
+
 ## DEREGISTRATION PROCEDURE 
 
 ![Screenshot from 2023-11-05 10-10-37](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/65d6c0dd-f0c3-4a60-9d1b-5cffbb5f92f8)
