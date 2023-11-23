@@ -533,6 +533,17 @@ UCI : provides the scheduler with informatipn about the situation at the device
 
 ![Screenshot from 2023-11-05 10-10-37](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/65d6c0dd-f0c3-4a60-9d1b-5cffbb5f92f8)
 
+- (1st step) device forwards the deregistration request to the AMF by a RAN after recieving the request
+- (2nd step) AMF starts to tear down any session related context so
+- it first contacts the SMF to release the UE context associated with the ongoning PDU session
+- SMF recieves the request and asks the UPF to release any user plan  resources related to this PDU session
+- SMF forwards info backto AMF saying the user plane are now released meaning the UE context is also released
+- based on this SMF also notifies the PCF that it no longer requires any policy associations that are associated with that PDU session and it also unsubscribes to the UDM that it no longer need any updates that it had previously requested from it
+- SMF also deregisters with the UDM that this PDU session is no longer valid
+- (3rd,4th step) the AMF notifies the PCF that the policy association related access management policies are no longer needed
+- (5th step) once the PDU session is turned down and all the policy associations hav been disconnected then the AMF confirms to the device the deregistration is accepted
+- (6th step)  AMF notifies RAN to release the Radio access related connection information 
+
 ## PDU SESSION ESTABLISHMENT
 
 ![Screenshot from 2023-11-05 12-57-14](https://github.com/KRIISHSHARMA/RESEARCH/assets/86760658/0e7d6f6f-c8e7-4c6e-a36f-f0a2bd7ee377)
