@@ -512,8 +512,22 @@ UCI : provides the scheduler with informatipn about the situation at the device
 2. RAN has to forward it to appropraite AMF but how will RAN know what is appropriate AMF
 3. here there are 2 possilities
    1. first if the device has already been communicating to the 5G network then it will have a temp ID assigned (`5G-GUTI(5G global unique temporary identifier)assigned by AMF which is comprised of the GUAMI (Globally Unique AMF ID) and the 5G-TMSI (5G Temporary Mobile Subscriber Identity)., used when AMF region of UE is not known`) so it can use this to see which AMF the device was previously been in communication with and RAN can forward request to corresponding AMF
-   2. if no previous identity available it means its the first power on procedure so RAN looks at the registration request and the registration request will have a slice identifier **NSSAI** , and then based on the slice identifier for this particular network slice the RAN sees which AMF supports that network slice and forwards the request to it 
+   2. if no previous identity available it means its the first power on procedure so RAN looks at the registration request and the registration request will have a slice identifier **NSSAI** , and then based on the slice identifier for this particular network slice the RAN sees which AMF supports that network slice and forwards the request to it (in case a Temp ID is not available, the NG-RAN uses the NSSAI provided by the UE at RRC connection establishment to select the appropriate AMF (the information is provided after MSG3 of the random access procedure))
 
+4. once the request has been passed to the AMF we come to context transfer
+5. `for example let us assume the registration request is because of mobility` so device has moved to a new region and trying to do a registration update ie. trying to connect to a new AMF but because it is mobility triggered the UE already have a UEcontext connection to old AMF
+6. (2nd step)so in next step the NEW AMF contacts the OLD AMF for transferring the UE context `Namf_Communication_UEcontextTransfer` and the old AMF responds by transffering to the new AMF
+7. (3rd step)in the next step for the to continue the authentication in carried out by 5G authentication and key agreement procedures(5G technology repo authentication procedure)
+8. (4th step) in exapmle of new AMF taking over , the new AMF will confirm to the old AMF that it has recieved UEcontext and now can handle Access and mobility mgmnt from now on so the old AMF can retire
+9. (5th step) the new AMF will register itself to the UDM saying it is the new AMF so take care of my valid info
+10. and then it speaks to the UDM to get the necessary subscription information and also **subscribes** for any further updates to the subscription info in the future to know subscription status of device
+11. on the other hand the OLD AMF has to retire for this purpose the UDM will notify the old AMF that it needs to deregister , so the OLD AMF will unsubscibe to any subsciption data that it has previously subscibed to
+12. so now the tranfer to new AMF is complete and OLD AMF retires
+13. (6th step) next the AMF needs to know the necessary policies related to access and mobility management so it goes to the PCF and fetches the necessary policy info corresponding to the device undergoing registration and the PCF provides the corresponding response
+14. (7th step) next if there is already an existing PDU session then the AMF speaks to the SMF to continue the PDU session using the `UpdateSMcontext` message on the other hand if there is some kind of  missmatch in the understanding of what the PDU session state is then previous PDU session is terminated using the `ReleaseSMcontext` message and new PDU session created if necessary
+15. (8th step) if the registarion process is going smooth so far the AMF will notify the device that the registraion has been accepted and optionally the device responds with confirmation message
+16. (9th step) the AMF can contact the PCF for any device specific policies for eg device might have to decide that for a specific application if it has to create a new PDU session or not and if there are multiple wifi networks are supported which one should the device prioritize to use in support of 5G network
+17. these types of policies can be fetched by the PCF if necessary 
 
 ## DEREGISTRATION PROCEDURE 
 
